@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Hagrid';
+  src: url('./hagrid/Hagrid-Text-Extrabold-trial.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-color: white;
+  height: 500px;
+  width:900px;
+  border-radius: 15px;
+  /* border:5px solid rgb(125, 125, 125); */
+  box-shadow: 6px 6px 0px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+}
+.left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 25px ;
+  justify-content: center;
+  background-color: rgb(175, 156, 98);
+  height: 500px;
+  width:420px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.left-container p:first-child{
+  font-family: 'Hagrid', sans-serif;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 38px;
+}
+
+.left-container input{
+  background-color: rgb(238, 238, 238);
+  height: 35px;
+  width:350px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.left-container p:last-child{
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 12px;
+}
+
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  height: 500px;
+  width:470px;
+  border-radius:  0px 15px 15px 0px;
+}
+
+.qr-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius:  8px;
+  margin-bottom: 10px;
+}
+
+.download-cont{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  margin-top: 10px;
+}
+
+.download-cont button{
+  height:35px;
+  width:150px;
+  font-weight: 700;
+  background-color: black;
+  color:wheat;
+  border-radius: 8px;
+  border:none
+}
+
+.download-cont p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.download-cont select{height:35px;
+  width:80px;
+  background-color: rgb(244, 244, 244);
+  color:rgb(39, 38, 38);
+  border-radius: 8px;
+  border:none;
+  padding:5px;
+}
+
+#qr-code{
+  border-radius:  8px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .App{
+    justify-content: start;
+    padding-top: 20px;
+    
+  }
+  
+  .container{
+    height: 500px;
+    width:300px;
+    flex-direction: column;
+    
+  }
+  .left-container{
+    background-color: rgb(175, 156, 98);
+    width:290px;
+    height:250px;
+    padding-left:10px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .left-container p:first-child{
+    font-size: 22px;
+  }
+  .left-container p:last-child{
+    font-size: 8px;
+  }
+  
+  .left-container input{
+   
+    width:200px;
+    
+  }
+  .right-container{
+    background-color: rgb(230, 230, 230);
+    width:300px;
+    height:250px;
+    border-radius: 0px 0px 15px 15px ;
+  }
+  .qr-cont{
+    
+    padding: 15px;
+    height: 120px;
+    width:130px;
+    border-radius:  8px;
+    margin-bottom: 10px;
+  }
+  .download-cont{
+    gap:2px;
+    margin: 5px 10px;
+  }
+  .download-cont button{
+    width:120px;
+   
+  }
+  
+  .download-cont p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .download-cont select{height:35px;
+    width:60px;
+    height: 35px;
+    font-size: 12px;
+    
+  }
+}
