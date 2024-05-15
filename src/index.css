@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Hagrid';
+  src: url('./hagrid/Hagrid-Text-Extrabold-trial.ttf') format('truetype');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,116 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.container{
+  background-color: white;
+  height: 500px;
+  width:900px;
+  border-radius: 15px;
+  /* border:5px solid rgb(125, 125, 125); */
+  box-shadow: 6px 6px 0px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+}
+.left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 25px ;
+  justify-content: center;
+  background-color: rgb(175, 156, 98);
+  height: 500px;
+  width:420px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.left-container p:first-child{
+  font-family: 'Hagrid', sans-serif;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 38px;
+}
+
+.left-container input{
+  background-color: rgb(238, 238, 238);
+  height: 35px;
+  width:350px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.left-container p:last-child{
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 12px;
+}
+
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  height: 500px;
+  width:470px;
+  border-radius:  0px 15px 15px 0px;
+}
+
+.qr-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius:  8px;
+  margin-bottom: 10px;
+}
+
+.download-cont{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  margin-top: 10px;
+}
+
+.download-cont button{
+  height:35px;
+  width:150px;
+  font-weight: 700;
+  background-color: black;
+  color:wheat;
+  border-radius: 8px;
+  border:none
+}
+
+.download-cont p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.download-cont select{height:35px;
+  width:80px;
+  background-color: rgb(244, 244, 244);
+  color:rgb(39, 38, 38);
+  border-radius: 8px;
+  border:none;
+  padding:5px;
+}
+
+#qr-code{
+  border-radius:  8px;
+  padding: 10px;
+}
+
